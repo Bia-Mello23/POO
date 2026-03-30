@@ -1,27 +1,50 @@
-import 'quadrado.dart';
+class Quadrado {
+  
+  double _lado;        
+  String _caractere;  
 
-void main() {
-  Quadrado q1 = Quadrado(4, "*");
-  Quadrado q2 = Quadrado(3, "#");
-  Quadrado q3 = Quadrado(4, "@");
+  Quadrado(this._lado, this._caractere) {
+    if (_lado <= 0) {
+      throw ArgumentError("O lado deve ser maior que 0!");
+    }
+    if (_caractere.isEmpty) {
+      throw ArgumentError("O caractere nao pode ser vazio!");
+    }
+    if (_caractere.length > 1) {
+      throw ArgumentError("O caractere deve ter apenas 1 simbolo!");
+    }
+  }
 
-  print("Lado do Q1: ${q1.lado}");
-  print("Caractere do Q1: ${q1.caractere}");
+  
+  double get lado => _lado;
+  String get caractere => _caractere;
 
-  print("Resumo Q1");
-  q1.exibirResumo();
+  double calcularArea() {
+    return _lado * _lado;
+  }
 
-  print("Resumo Q2");
-  q2.exibirResumo();
+  double calcularPerimetro() {
+    return _lado * 4;
+  }
 
-  print("Resumo Q3");
-  q3.exibirResumo();
+  void desenhar() {
+    int tamanho = _lado.toInt();
+    for (int linha = 0; linha < tamanho; linha++) {
+      String linhinha = "";
+      for (int coluna = 0; coluna < tamanho; coluna++) {
+        linhinha += _caractere;
+      }
+      print(linhinha);
+    }
+  }
 
-  print("Desenho Q1");
-  q1.desenhar();
+  void exibirResumo() {
+    print("Lado: $_lado");
+    print("Área: ${calcularArea()}");
+    print("Perímetro: ${calcularPerimetro()}");
+  }
 
-  print("Desenho Q2");
-  q2.desenhar();
-
- 
+  bool ehIgual(Quadrado outroQuadrado) {
+    return _lado == outroQuadrado._lado;
+  }
 }
