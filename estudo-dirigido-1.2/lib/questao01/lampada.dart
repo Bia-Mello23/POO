@@ -12,3 +12,9 @@ class Lampada {
   _ligada = false;
   _intensidade = 50;
 }
+
+//ligar a lampada
+void ligar() {
+  _ligada = true;
+  print("Lâmpada ligada");
+}
