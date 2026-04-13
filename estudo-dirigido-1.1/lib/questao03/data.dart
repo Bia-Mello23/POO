@@ -1,4 +1,4 @@
-Class Data {
+class Data {
   //criar uma classe data - atributos
   int dia;
   int mes;
