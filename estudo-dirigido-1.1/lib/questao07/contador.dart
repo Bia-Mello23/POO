@@ -4,29 +4,29 @@ class Contador {
   // Construtor
   Contador(this.valor) {
     if (valor < 0) {
-      throw Exception("O valor inicial deve ser maior ou igual a 0");
+      valor = 0;
     }
   }
 
-  // Incrementar +1
+  // Aumenta 1
   void incrementar() {
     valor++;
   }
 
-  // Decrementar -1
+  // Diminui 1 (sem ficar negativo)
   void decrementar() {
     if (valor > 0) {
       valor--;
     }
   }
 
-  // Zerar
+  // Zera o contador
   void zerar() {
     valor = 0;
   }
 
-  // Exibir valor
+  // Mostra o valor
   void exibirValor() {
-    print("Valor atual: $valor");
+    print("Valor: $valor");
   }
 }

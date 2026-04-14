@@ -1,3 +1,5 @@
+import 'cupomdesconto.dart';
+
 void main() {
   //criar um cupom de 15% ativo
   CupomDesconto meuCupom = CupomDesconto("PROMO15", 15.0, true); 

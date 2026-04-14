@@ -3,20 +3,11 @@ class Pessoa {
   int idade;
 
   // Construtor
-  Pessoa(this.nome, this.idade) {
-    // Validações
-    if (nome.isEmpty) {
-      throw Exception("O nome não pode ser vazio.");
-    }
-    if (idade < 0) {
-      throw Exception("A idade deve ser maior ou igual a 0.");
-    }
-  }
+  Pessoa(this.nome, this.idade);
 
-  // Método para exibir dados
+  // Método para mostrar os dados
   void exibirDados() {
-    print("Nome: $nome");
+    print("\nNome: $nome");
     print("Idade: $idade");
-    print("------------");
   }
 }
