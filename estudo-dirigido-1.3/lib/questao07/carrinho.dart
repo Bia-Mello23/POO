@@ -1,7 +1,7 @@
 
 import '../questao01/cliente.dart';
-import '../questao06/lista_carrinho.dart';
 import '../questao05/item_carrinho.dart';
+import '../questao06/lista_carrinho.dart';
 
 class Carrinho {
   Cliente _cliente;

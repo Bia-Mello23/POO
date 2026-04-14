@@ -1,7 +1,7 @@
 import '../questao01/cliente.dart';
 import '../questao03/produto.dart';
-import '../questao05/item_carrinho.dart';
-import '../questao06/lista_carrinho.dart';
+import '../questao05/itemcarrinho.dart';
+import '../questao06/carrinho.dart';
 import 'carrinho.dart';
 
 void main() {
