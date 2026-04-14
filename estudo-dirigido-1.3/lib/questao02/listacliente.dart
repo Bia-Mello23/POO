@@ -1,3 +1,4 @@
+import 'estudo-dirigido-1.3\lib\questao01\cliente.dart';
 class ListaCliente {
   //atributo privado para guardar os clientes 
   final List<Cliente> _clientes = [];
