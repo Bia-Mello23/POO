@@ -1,3 +1,4 @@
+import 'itemcarrinho.dart';
 void main() {
   //criar um produto (precisamos dele para o item)
   Produto p1 = Produto("Monitor 24'", 900.0, 10, true); //dependência entre os objetos
