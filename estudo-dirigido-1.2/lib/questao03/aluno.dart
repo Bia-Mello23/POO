@@ -20,11 +20,10 @@ class Aluno {
 
   // Método para exibir as informações
   void exibirBoletim() {
-    print("- Boletim -");
+    print("Boletim\n");
     print("RA: $_ra");
     print("Nome: $_nome");
     print("Nota Final: $_notaFinal");
     print("Situação: ${aprovado() ? 'Aprovado' : 'Reprovado'}");
-    print("---------------------");
   }
 }

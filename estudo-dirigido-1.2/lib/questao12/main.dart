@@ -1,4 +1,5 @@
-import 'Agenda.dart';
+import 'agenda.dart';
+import 'contato.dart';
 
 void main() {
   print(" AGENDA VAZIA ");

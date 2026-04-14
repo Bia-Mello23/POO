@@ -1,15 +1,15 @@
+import 'oficina.dart';
 import 'carro.dart';
 
 void main() {
-  Carro meuCarro = Carro('Celta', 15000);
+  Carro carro = Carro('Fusca', 12000);
   Oficina oficina = Oficina();
 
   print('Antes da revisão:');
-  meuCarro.exibir();
+  carro.exibir();
 
-  // Enviando o objeto para o método
-  oficina.revisar(meuCarro);
+  oficina.revisar(carro);
 
   print('\nDepois da revisão:');
-  meuCarro.exibir();
+  carro.exibir();
 }

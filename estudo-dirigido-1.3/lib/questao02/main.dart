@@ -1,4 +1,4 @@
-import 'data.dart';
+import 'lista_cliente.dart';
 
 void main() {
   //instanciando 3 objetos de classe CLIENTE
