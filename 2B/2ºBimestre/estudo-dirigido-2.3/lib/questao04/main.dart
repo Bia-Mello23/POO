@@ -1,4 +1,6 @@
 import 'contabancaria.dart';
+import 'lista_generica.dart';
+
 
 void main() {
 

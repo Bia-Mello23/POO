@@ -1,3 +1,3 @@
-abstract class Apresentavel {
+abstract interface class Apresentavel {
   void exibirDados();
 }
